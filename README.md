@@ -3,7 +3,7 @@
 ### Bio-Adaptive Interface for Cognitive Urban Environments
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://your-username.github.io/neosynapse)
+[![Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://khan34535-sudo.github.io/NEOSYNAPSE-/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 ---
@@ -36,7 +36,7 @@ NEOSYNAPSE solves all three.
 
 ## 🖥️ Live Demo
 
-**[Click here to run the simulation](https://your-username.github.io/neosynapse)**
+**[Click here to run the simulation](https://khan34535-sudo.github.io/NEOSYNAPSE-/)**
 
 ---
 
@@ -89,5 +89,44 @@ NEOSYNAPSE solves all three.
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/neosynapse.git
-cd neosynapse
+git clone https://github.com/khan34535-sudo/NEOSYNAPSE-.git
+cd NEOSYNAPSE-
+open index.html
+# or use Live Server in VS Code
+NEOSYNAPSE-/
+├── index.html          # Main simulation (two watches)
+├── README.md           # This file
+├── LICENSE             # MIT License
+├── CONTRIBUTING.md     # Contribution guidelines
+└── demo/
+    └── demo-preview.png # Screenshot for README
+// Use browser geolocation API
+navigator.geolocation.getCurrentPosition((position) => {
+    userLat = position.coords.latitude;
+    userLng = position.coords.longitude;
+});
+// Pseudocode for future integration
+wearableAPI.onHeartRateChange((hrv) => {
+    if (hrv < 30 && heatIndex > 45) {
+        triggerEmergencyDispatch();
+    }
+});
+// API call to dispatch rescue pod
+fetch('https://api.neom-mobility.com/v1/dispatch', {
+    method: 'POST',
+    body: JSON.stringify({ userId, gps, priority: 'critical' })
+});
+
+---
+
+## Instructions
+
+1. **Select all** the text inside the code block above
+2. **Copy** (Ctrl+C or Cmd+C)
+3. **Go to** your GitHub repository: `https://github.com/khan34535-sudo/NEOSYNAPSE-`
+4. **Click** on `README.md`
+5. **Click** the pencil icon (Edit)
+6. **Paste** (Ctrl+V or Cmd+V) — replace everything
+7. **Scroll down** and click **"Commit changes"**
+
+Done.
